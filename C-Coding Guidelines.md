@@ -395,10 +395,11 @@ private static double calculateRootViaNewtonsMethod(int degree, double radicand)
 
 private static double calculateRoot(int degree, double radicand){
 
-    if(degree %2 == 0 && radicand < 0.0) {
+    boolean degeeIsEven = degree %2 == 0; 
+    if(degeeIsEven && radicand < 0.0) {
         return Double.NaN;
 
-    } else if(degree %2 == 0 && radicand > 0.0) {
+    } else if(degeeIsEven && radicand > 0.0) {
         return calculateRootViaNewtonsMethod(degree, radicand);
 
     } else {
