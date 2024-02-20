@@ -393,7 +393,7 @@ private static double calculateRootViaNewtonsMethod(int degree, double radicand)
     return x;
 }
 
-private static double calculateRootIfRadicandLessThanZero(int degree, double radicand){
+private static double calculateRoot(int degree, double radicand){
 
     if(degree %2 == 0 && radicand < 0.0) {
         return Double.NaN;
@@ -421,7 +421,7 @@ public static double root(int degree, double radicand) {
         return Double.NaN;
 
     } else {
-        return calculateRootIfRadicandLessThanZero(degree, radicand);
+        return calculateRoot(degree, radicand);
     }
 }
 ```
