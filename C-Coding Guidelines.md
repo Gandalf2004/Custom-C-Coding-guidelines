@@ -1,4 +1,4 @@
-# C Coding Style Guide
+# C# Coding Style Guide
 
 ## Table of Contents
 1. [Introduction](#1.-introduction)
